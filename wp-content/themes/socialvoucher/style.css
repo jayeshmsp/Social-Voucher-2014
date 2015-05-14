@@ -1,0 +1,1848 @@
+/*
+Theme Name: Social Voucher
+Theme URI: http://www.mspconcepts.com/
+Author: the MSP team
+Author URI: http://www.mspconcepts.com/
+Description: The Social Voucher theme is very light weight as well as full responsive.
+Version: 1.0
+License: Social Voucher
+License URI: http://www.mspconcepts.com/
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, accessibility-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+html,body {
+  height: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+}
+a {
+   outline: 0;
+}
+body {
+  /*background-color: #ededed;*/
+  color: #424242;
+  margin: 0;
+  font-family:"open_sansregular";
+  font-size:14px;
+  line-height:1.428571429;
+  background: url(images/bg.jpg) no-repeat center top;
+  background-size:100% 100%;
+  /*background-size: cover;*/
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"open_sansregular";font-weight:normal;line-height:1.1;color:#333}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small{font-weight:normal;line-height:1}
+h1,.h1{font-size:45px;line-height:48px}
+h2,.h2{font-size:36px;line-height:42px}
+h3,.h3{font-size:28px;line-height:36px}
+h4,.h4{font-size:24px;line-height:25px}
+h5,.h5{font-size:20px;line-height:24px}
+h6,.h6{font-size:18px;line-height:24px}
+
+
+.text-center{text-align:center}
+
+.wrap {
+  min-height: 100%;
+  display: table;
+  height: 100%;
+}
+
+.top-bar {
+  height: 20px;
+  background: #71a100;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcxYTEwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2ZmExMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #71a100 0%, #6fa100 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#71a100), color-stop(100%,#6fa100));
+  background: -webkit-linear-gradient(top,  #71a100 0%,#6fa100 100%);
+  background: -o-linear-gradient(top,  #71a100 0%,#6fa100 100%);
+  background: -ms-linear-gradient(top,  #71a100 0%,#6fa100 100%);
+  background: linear-gradient(to bottom,  #71a100 0%,#6fa100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71a100', endColorstr='#6fa100',GradientType=0 );
+}
+
+:root .top-bar {
+  filter: none \0/IE9;
+}
+
+.welcome-container {
+  width: 500px;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+.coming-soon-wrap {
+  margin-top: 90px;
+}
+
+.frowny-face {
+  text-align: center;
+  font-size: 130px;
+  color: #919191;
+  line-height: 1.1;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+.welcome-container h1 {
+  margin-bottom: 1em;
+}
+
+.btn-primary {
+    background-color: #7FB141;
+    border-color: #648C33;
+    color: #FFFFFF;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea, option {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 0 0 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 8px 20px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #7FB141;
+    border-color: #648C33;
+    color: #FFFFFF;
+}
+
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active {
+    background-color: #729E3A;
+    border-color: #496626;
+    color: #fff;
+}
+
+.btn:hover, 
+.btn:focus {
+    text-decoration: none;
+}
+
+.login-container {
+  text-align: right;
+  margin: 20px;
+}
+
+.footer {
+  position: relative;
+  margin-top: -60px; /* negative value of footer height */
+  height: 60px;
+  clear:both;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wpcf7-form-control-wrap.your-email {
+    float: left;
+    width: auto;
+}
+
+.wpcf7-validation-errors {
+    display: none !important;
+}
+
+#secondary aside:last-child {
+    float: right;
+    width: 50%;
+}
+
+.home-link {
+    float: left;
+    padding-left: 3%;
+    width: 97%;
+}
+.contact_form_popup {
+    margin-top: 70px;
+}
+
+#hiring{min-height:375px;margin-bottom: 10px;}
+#hiring h2{font-size:26px !important; margin-bottom:15px !important;color:#000;}
+#hiring h3{font-size:20px !important; line-height:33px; cursor:pointer; margin-top:15px;}	
+#hiring h3 em{font-style:italic;}
+#hiring p{font-size:16px !important; line-height:normal !important;}
+#hiring h3 span{width:32px; height:32px; background:url('images/right-a.png') no-repeat center; display:block; float:left; margin-right:10px;}
+#hiring h3 span.down{background:url('images/down-a.png') no-repeat center;width:32px; height:32px; display:block; float:left; margin-right:10px;}
+#hiring .details{font-size:16px !important; padding-left:44px;}
+#hiring .details ul{list-style:disc; padding-left:20px;}
+#hiring .details ul ul{list-style:circle;}
+.accordian{margin-top:20px !important;}
+.logo-a{float: left; width: 359px; height: 161px; position: absolute; z-index: 99; top: 0x;	}
+
+
+.error_message_text {
+    color: red;
+    float: right;
+    width: 50%;
+}
+#pop-contact {
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+}
+#pop-view {
+    left: 0;
+    height: 80%;
+    right: 0;
+    margin: 0 auto; 
+}
+#pop-careers {
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    border-radius: 0;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+    display: none;
+    height: 90%;
+    left: 0;
+    margin-left: -400px;
+    overflow: auto;
+    padding: 25px 10px;
+    position: absolute;
+    top: 45px;
+    width: 70%;
+    right: 0;
+    margin: 0 auto;
+}
+
+#pop-careers .pop-text {
+    color: #323232;
+    float: left;
+    font-size: 24px;
+    width: 100%;
+}
+#pop-video {
+    height: auto;
+    left: 0;
+    margin: auto;
+    padding: 30px 40px;
+    right: 0;
+    top: 33%;
+    width: 40%;
+}
+
+#pop-video .form-btn {
+    float: left;
+    padding-top: 25px;
+}
+.home_form div.wpcf7 img.ajax-loader {
+    display: none;
+}
+#pop-video .pop-form {
+    margin-top: 10px;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+    float: left;
+    width: 100%;
+    color: #000;
+}
+.home_form .input[type="text"], input[type="email"] {
+    height: 60px;
+    position: relative;
+    top: 3px;
+}
+#wpcf7-f15-o2 .wpcf7-email {
+    height: 36px;
+}
+#wpcf7-f15-o2 select {
+    height: 36px;
+    width: 303px;
+    margin-bottom: 10px;
+}
+#wpcf7-f15-o2 textarea {
+    margin-bottom: 10px;
+}
+.jp-video-360p {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+    }
+.wpcf7-mail-sent-ng {
+    display: none !important;
+}
+#wpcf7-f8-p2-o1 .wpcf7-mail-sent-ok {
+    color: #fff;
+}
+/* saf3+, chrome1+ */
+
+/* 12-05 */
+  .iam
+   {
+    font-family: "open_sansregular";
+    color: #424242;
+   }
+   
+   
+/* 12-05 */
+
+div.light{
+  margin-top: 6px;
+}
+
+/*ie ONLY */
+_:-ms-fullscreen, :root #pop-view {
+    height: 70%;
+    }
+    
+   _:-ms-fullscreen, :root  .pop-text
+    {
+        width: 43%;
+    }
+   _:-ms-fullscreen, :root  .error_message_text {
+        
+    width: 57%;
+}
+
+/*ie ONLY */
+/*chrome  ONLY */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   #pop-view {
+    height: 70%;
+    }
+}
+/*chrome  ONLY */
+
+#pop-contact
+{
+    height: 80%;
+    overflow: auto;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .home_form input[type=submit] {
+        height: 69px;
+    }
+    
+    .home_form input[type=text], input[type=email],textarea,select{
+	   height: 55px;
+    }
+    
+    #pop-careers{
+        top: 10px;
+        width: 70%;
+    }
+    #pop-contact {
+        height: auto;
+        left: 0;
+        margin: auto;
+        right: 0;
+    }
+}
+    
+/* IE */
+@media all and (-ms-high-contrast: none) { 
+    
+    .home_form input[type=text], input[type=email],textarea,select{
+	   height: 46px;
+    }
+    .home_form .wpcf7-mail-sent-ng {
+        color: #fff;
+    }
+    #pop-careers{
+        top: 10px;
+    }
+    #pop-contact{
+        top: 40px;
+        height: 475px;
+    }
+    #pop-view {
+        top: 40px;
+    }
+}
+  
+/* Responsive Start here by MSP */
+@media only screen and (min-width : 980px) and (max-width : 1279px){
+    #big-video-wrap {
+        display: none !important;
+    }
+    body {
+       background-size: auto;
+    }
+    .page-wrap {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 0;
+    }
+    #secondary aside:first-child {
+        float: left;
+        width: 50%;
+    }
+    #secondary aside:last-child {
+        float: right;
+        width: 30%;
+        position: relative !important;
+        top: 7px !important;
+    }
+    footer .footer_menu a {
+        margin-left: 48px;
+    }
+    #main {
+        float: left;
+        margin: 30px 0 0 !important;
+        /*padding: 7% 20px 50%;*/
+        position: relative;
+        width: auto;
+    }
+    #main h1 {
+        margin: 0 0 50px;
+    }
+
+  
+  #pop-video input[type="submit"]
+  {
+    width: 180px;
+      }
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 978px) {
+
+    #big-video-wrap {
+        display: none !important;
+    }
+    body {
+       background-size: auto;
+    }
+    .page-wrap {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 0;
+    }
+    #secondary aside:first-child {
+        float: left;
+        width: 50%;
+    }
+    #secondary aside:last-child {
+        float: right;
+        width: 50%;
+        position: relative !important;
+        top: 7px !important;
+    }
+    footer .footer_menu a {
+        margin-left: 42px;
+    }
+    #main {
+        float: left;
+        margin: 30px 0 0 !important;
+        /*padding: 20% 20px 50%;*/
+        position: relative;
+        width: auto;
+    }
+    #secondary .widget-area.masonry {
+        height: auto !important;
+    }
+    #main h1 {
+        margin: 0 0 50px;
+    }
+    /* for popup responsive */
+    .overlay {
+        width: 100%;
+    }
+    #pop-contact {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 10px 20px 0;
+        top: 40%;
+        width: 95%;
+    }
+    .btn-close {
+        right: 15px;
+        top: 10px;
+    }
+    #pop-contact .pop-text h2 {
+        font-size: 29px;
+        margin: 0 0 10px;
+    }
+    #pop-contact .pop-text img {
+        width: 75%;
+    }
+    #pop-contact .contact_form_popup {
+        margin-top: 25px;
+    }
+    #pop-contact .contact_form_popup .pop-form input[type="text"] {
+        height: 25px;
+    }
+    #pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select {
+        font-size: 15px;
+        height: 25px;
+        margin-bottom: 10px;
+        margin-right: 6px;
+        padding: 6px 10px;
+        margin-top: 5px;
+        width: 95%;
+    }
+    #pop-contact .contact_form_popup textarea{
+        height: 35px;
+        width: 95%;
+    }
+    #pop-contact .contact_form_popup .pop-form select {
+        height: 25px;
+        width: 110%;
+    }
+    #pop-contact .contact_form_popup input[type="submit"] {
+        font-size: 18px;
+        height: 40px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: 95%;
+    }
+    #pop-contact span.wpcf7-not-valid-tip {
+        color: #f00;
+        display: block;
+        font-size: 12px;
+    }
+    
+    #pop-careers {
+        width: 98%;
+        top: 20%;
+        left: 0;
+        margin-left: auto;
+    }
+    #pop-careers .full-w {
+        padding: 0 10px;
+    }
+
+    #pop-careers .accordian.full-w h3 strong {
+        float: right;
+        width: 83%;
+        padding: 0;
+    }
+    .accordian.full-w strong {
+        padding: 2% 0;
+    }
+    
+    #pop-careers #hiring h3 em {
+        float: right;
+        font-size: 14px;
+        font-style: italic;
+    }
+    
+    #pop-careers #hiring h3 span {
+        float: left;
+        height: 25px;
+        margin-right: 0;
+        position: relative;
+        top: -28px;
+        width: 25px;
+    }
+    #pop-careers #hiring .details {
+        font-size: 16px !important;
+        padding-left: 0;
+        text-align: justify;
+        float: left;
+    }
+    #pop-video {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 60px 15px;
+        text-align: center;
+       
+        width: 80%;
+        right: 0;
+        margin-right: auto;
+        position: absolute;
+    }
+    #pop-video .pop-text {
+        float: left;
+        font-size: 20px;
+        width: 100%;
+    }
+    #pop-video .pop-text h2 {
+        font-size: 33px;
+        margin: 0 0 10px;
+    }
+    #pop-video .pop-form {
+        float: left;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #pop-video .form-btn {
+        float: left;
+        width: 100%;
+    }
+    #pop-video input[type="submit"] {
+      font-size: 18px;
+      height: 45px;
+      line-height: 45px;
+      margin-top: 10px;
+      width: 64%;
+    }
+    #pop-video #error_message {
+        float: left;
+        padding-top: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-video .error_message_text {
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-view {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 34px 0;
+        position: absolute;
+        top: 40%;
+        width: 80%;
+        right: 0;
+        margin-right: auto;
+    }
+    #pop-view .pop-text {
+        color: #323232;
+        float: left;
+        font-size: 24px;
+        width: 100%;
+    }
+    .jp-video-360p {
+        width: 95% !important;
+        margin-left: 10px !important;
+    }
+    .jp-jplayer {
+        height: auto !important;
+        width: 100% !important;
+    }
+    #jp_video_0 {
+        height: 115px !important;
+        width: 100% !important;
+    }
+    .jp-interface {
+        width: 100% !important;
+    }
+      /* End Popup Responsive */
+
+}
+
+@media only screen and (min-width : 641px) and (max-width : 767px) {
+
+    #big-video-wrap {
+        display: none !important;
+    }
+    body {
+       background-size: auto;
+    }
+    .page-wrap {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 0;
+    }
+    #secondary aside {
+        float: left;
+        width: 100%;
+    }
+    .footer_menu a {
+        margin: 0 !important;
+        text-align: center;
+        width: 100%;
+    }
+    #secondary aside:last-child {
+        width: 100% !important;
+        padding-top: 10% !important;
+        padding-bottom: 20px;
+    }
+    .home-link img {
+        height: 140px !important;
+        width: 250px !important;
+    }
+    #main {
+        float: left;
+        margin: 30px 0 0 !important;
+        padding: 7% 20px 10%;
+        position: relative;
+        width: auto;
+    }   
+    #main h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    /* for popup responsive */
+    .overlay {
+        width: 100%;
+    }
+    #pop-contact {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 10px 20px 0;
+        top: 10px;
+        width: 94%;
+    }
+    .btn-close {
+        right: 15px;
+        top: 10px;
+    }
+    #pop-contact .pop-text h2 {
+        font-size: 29px;
+        margin: 0 0 10px;
+    }
+    #pop-contact .pop-text img {
+        width: 60%;
+    }
+    #pop-contact .contact_form_popup {
+        margin-top: 15px;
+    }
+    #pop-contact .contact_form_popup .pop-form input[type="text"] {
+        height: 30px;
+    }
+    #pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select {
+        font-size: 15px;
+        height: 25px;
+        margin-bottom: 6px;
+        margin-right: 6px;
+        padding: 6px 10px;
+        margin-top: 5px;
+        width: 90%;
+    }
+    #pop-contact .contact_form_popup textarea{
+        height: 25px;
+        width: 90%;
+    }
+    #pop-contact .contact_form_popup .pop-form select {
+        height: 30px;
+        width: 110%;
+    }
+    #pop-contact .contact_form_popup input[type="submit"] {
+        font-size: 18px;
+        height: 33px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #pop-contact span.wpcf7-not-valid-tip {
+        color: #f00;
+        display: block;
+        font-size: 12px;
+    }
+    
+    #pop-careers {
+        width: 97%;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+    }
+    #pop-careers .full-w {
+        padding: 0 10px;
+    }
+
+    #pop-careers .accordian.full-w h3 strong {
+        float: right;
+        width: 83%;
+        padding: 0;
+    }
+    .accordian.full-w strong {
+        padding: 2% 0;
+    }
+    
+    #pop-careers #hiring h3 em {
+        float: right;
+        font-size: 14px;
+        font-style: italic;
+    }
+    
+    #pop-careers #hiring h3 span {
+        float: left;
+        height: 25px;
+        margin-right: 0;
+        position: relative;
+        top: -28px;
+        width: 25px;
+    }
+    #pop-careers #hiring .details {
+        font-size: 16px !important;
+        padding-left: 0;
+        text-align: justify;
+        float: left;
+    }
+    #pop-video {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 60px 15px;
+        text-align: center;
+        top: 10px;
+        width: 80%;
+        right: 0;
+        margin-right: auto;
+        position: absolute;
+    }
+    #pop-video .pop-text {
+        float: left;
+        font-size: 20px;
+        width: 100%;
+    }
+    #pop-video .pop-text h2 {
+        font-size: 33px;
+        margin: 0 0 10px;
+    }
+    #pop-video .pop-form {
+        float: left;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #pop-video .form-btn {
+        float: left;
+        width: 100%;
+    }
+    #pop-video input[type="submit"] {
+      font-size: 18px;
+      height: 45px;
+      line-height: 45px;
+      margin-top: 10px;
+      width: 64%;
+    }
+    #pop-video #error_message {
+        float: left;
+        padding-top: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-video .error_message_text {
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-view {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 34px 0;
+        position: absolute;
+        top: 10px;
+        width: 80%;
+        right: 0;
+        margin-right: auto;
+    }
+    #pop-view .pop-text {
+        color: #323232;
+        float: left;
+        font-size: 24px;
+        width: 100%;
+    }
+    .jp-video-360p {
+        width: 95% !important;
+        margin-left: 10px !important;
+    }
+    .jp-jplayer {
+        height: auto !important;
+        width: 100% !important;
+    }
+    #jp_video_0 {
+        height: 115px !important;
+        width: 100% !important;
+    }
+    .jp-interface {
+        width: 100% !important;
+    }
+      /* End Popup Responsive */
+
+}
+
+
+@media only screen and (min-width : 480px) and (max-width : 640px) {
+
+    #big-video-wrap {
+        display: none !important;
+    }
+    body {
+       background-size: auto;
+    }
+    .page-wrap {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 0;
+    }
+    .btn-careers, .btn-video {
+        display: none;
+    }
+    
+    input[type="text"], input[type="email"], textarea, select {
+        width: 100%;
+    }
+    #secondary aside:first-child {
+        float: left;
+        width: 100%;
+    }
+    .footer_menu a {
+        margin: 0 !important;
+        text-align: center;
+        width: 100%;
+    }
+    #secondary aside:last-child {
+        width: 100% !important;
+        padding-top: 10% !important;
+        padding-bottom: 20px;
+    }
+    .home-link img {
+        height: 140px !important;
+        width: 250px !important;
+    }
+    #main {
+        float: left;
+        margin: 30px 0 0 !important;
+        padding: 7% 20px 10%;
+        position: relative;
+        width: auto;
+    }   
+    #main h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    /* for popup responsive */
+    .overlay {
+        width: 100%;
+    }
+    /*#pop-contact {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 10px 20px 0;
+        top: 10px;
+        width: 93%;
+    }
+    */
+    .btn-close {
+        right: 15px;
+        top: 10px;
+    }
+    #pop-contact .pop-text h2 {
+        font-size: 29px;
+        margin: 0 0 10px;
+    }
+    #pop-contact .pop-text img {
+        width: 75%;
+    }
+    #pop-contact .contact_form_popup {
+        margin-top: 15px;
+    }
+    #pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select {
+        font-size: 15px;
+        height: 30px !important;
+        margin-bottom: 10px;
+        margin-right: 6px;
+        padding: 4px 10px;
+        margin-top: 5px;
+        width: 92%;
+    }
+    #pop-contact .contact_form_popup textarea{
+        height: 30px;
+        width: 92%;
+    }
+    #pop-contact .contact_form_popup .pop-form select {
+        height: 30px;
+        width: 110%;
+    }
+    #pop-contact .contact_form_popup input[type="submit"] {
+        font-size: 18px;
+        height: 25px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #pop-contact span.wpcf7-not-valid-tip {
+        font-size: 9px;
+    }
+    
+    #pop-careers {
+        width: 97%;
+        top: 0;
+        left: 0;
+        margin-left: auto;
+    }
+    #pop-careers .full-w {
+        padding: 0 10px;
+    }
+
+    #pop-careers .accordian.full-w h3 strong {
+        float: right;
+        width: 83%;
+        padding: 0;
+    }
+    .accordian.full-w strong {
+        padding: 2% 0;
+    }
+    
+    #pop-careers #hiring h3 em {
+        float: right;
+        font-size: 14px;
+        font-style: italic;
+    }
+    
+    #pop-careers #hiring h3 span {
+        float: left;
+        height: 25px;
+        margin-right: 0;
+        position: relative;
+        top: -28px;
+        width: 25px;
+    }
+    #pop-careers #hiring .details {
+        font-size: 16px !important;
+        padding-left: 0;
+        text-align: justify;
+        float: left;
+    }
+    
+    #pop-video {
+        height: auto;
+        padding: 20px 15px;
+        width: 75%;
+        text-align: center;
+        left: 0;
+        margin-left: auto;
+        top: 20px;
+        right: 0;
+        margin-right: auto;
+    }
+    #pop-video .pop-text {
+        float: left;
+        font-size: 20px;
+        width: 100%;
+    }
+    #pop-video .pop-text h2 {
+        font-size: 33px;
+        margin: 0 0 10px;
+    }
+    #pop-video .pop-form {
+        float: left;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #pop-video .form-btn {
+        float: left;
+        width: 100%;
+    }
+    #pop-video input[type="submit"] {
+      font-size: 18px;
+      height: 45px;
+      line-height: 45px;
+      margin-top: 10px;
+      width: 64%;
+    }
+    #pop-video #error_message {
+        float: left;
+        padding-top: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-video .error_message_text {
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-view {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 34px 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    #pop-view .pop-text {
+        color: #323232;
+        float: left;
+        font-size: 24px;
+        width: 100%;
+    }
+    .jp-video-360p {
+        width: 95% !important;
+        margin-left: 10px !important;
+    }
+    .jp-jplayer {
+        height: auto !important;
+        width: 100% !important;
+    }
+    #jp_video_0 {
+        height: 115px !important;
+        width: 100% !important;
+    }
+    .jp-interface {
+        width: 100% !important;
+    }
+    
+    /* 12-05-2015*/
+/*           #main h1 {
+  font-size: 25px;
+  line-height: 29px;
+  text-align: left;
+}
+*/
+
+.home_form input[type="submit"]
+{
+    margin-left: 0;
+}
+input[type="text"], input[type="email"], textarea, select
+{
+    width: 100%;
+}   
+#main {
+  float: left;
+  margin: 30px auto 0;
+  padding: 7% 8px 10%;
+  position: relative;
+  width: 100%;
+}
+#pop-contact {
+  bottom: 0;
+  height: 90%;
+  left: 0;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 30px 12px;
+  right: 0;
+  top: 16px;
+  width: 87%;
+}
+
+.pop-contact
+{
+    width: 44%;
+}
+
+.light {
+  font-size: 16px;
+}
+#pop-contact .pop-text h2 {
+        font-size: 22px;
+        margin: 0 0 10px;
+}
+/*
+.home-link
+{
+    text-align: center;
+    width: 97%;
+    padding-top: 15px;
+}
+.home_form .wpcf7-form-control-wrap.your-email {
+  width: 100%;
+  float: none;
+}
+#main h1 {
+    text-align: center;
+    font-size: 29px;
+    line-height: 29px;
+}
+.home_form .wpcf7-form > p {
+  text-align: center;
+}
+.contact_form_popup .wpcf7-form > p {
+  text-align: right;
+}
+*/
+#pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select
+{
+    margin-right: 0;
+}
+#pop-contact .contact_form_popup input[type="submit"]
+{
+width: 93%;
+}
+    /* 12-05-2015*/
+    
+      /* End Popup Responsive */
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+    
+    #big-video-wrap {
+        display: none !important;
+    }
+    body {
+       background-size: auto;
+    }
+    .page-wrap {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 0;
+    }
+    .btn-careers, .btn-video {
+        display: none;
+    }
+    
+    #secondary aside {
+        float: left;
+        width: 100%;
+    }
+    .footer_menu a {
+        margin: 0 !important;
+        text-align: center;
+        width: 100%;
+    }
+    #secondary aside:last-child {
+        width: 100% !important;
+        padding-top: 10% !important;
+        padding-bottom: 20px;
+    }
+    .home-link {
+        padding-left: 10% !important;
+        width: auto !important;
+        padding-top: 5%;
+    }
+   
+    .home-link img {
+        height: 140px !important;
+        width: 250px !important;
+    }
+    
+    #main {
+        float: left;
+        margin: 30px 0 0 !important;
+        padding: 7% 5px 10%;
+        position: relative;
+        width: 97%;
+    }   
+    #main h1 {
+        font-size: 29px;
+        line-height: 40px;
+    }
+    
+    .wpcf7-form {
+        text-align: center;
+    }
+    .wpcf7-form p {
+        text-align: left;
+    }
+    /* for popup responsive */
+    .overlay {
+        width: 100%;
+    }
+/*    #pop-contact {
+        bottom: 0;
+        height: 69%;
+        left: 0;
+        margin: auto;
+        padding: 30px 12px 0;
+        top: 0;
+        width: 92%;
+    }
+   #pop-contact .pop-text h2 {
+        font-size: 29px;
+        margin: 0 0 10px;
+    }
+    */
+    #pop-contact .pop-text img{
+        width: 100%;
+    }
+    #pop-contact .contact_form_popup {
+        margin-top: 50px;
+    }
+    #pop-contact .contact_form_popup .pop-form input[type="text"] {
+        height: 30px;
+    }
+    #pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select {
+        font-size: 15px;
+        height: 32px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        padding: 6px 10px;
+        margin-top: 5px;
+        width: 100%;
+    }
+   /* #pop-contact .contact_form_popup textarea{
+        width: 100%;
+    }
+    */
+    #pop-contact .contact_form_popup .pop-form select {
+        height: 30px;
+        width: 100%;
+    }
+    
+    #pop-contact .contact_form_popup input[type="submit"] {
+      font-size: 18px;
+      height: 40px;
+      line-height: 20px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    #pop-contact span.wpcf7-not-valid-tip {
+        font-size: 9px;
+    }
+    
+    #pop-careers {
+        width: 93%;
+        top: 15px;
+        left: 0;
+        margin-left: auto;
+    }
+    #pop-careers .full-w {
+        padding: 0 10px;
+    }
+    
+    #pop-careers #hiring h3 {
+        float: left;
+        font-size: 16px !important;
+    }
+    #pop-careers .accordian.full-w h3 strong {
+        float: right;
+        font-size: 14px;
+        width: 83%;
+        padding: 0;
+    }
+    .accordian.full-w strong {
+        padding: 2% 0;
+    }
+    
+    #pop-careers #hiring h3 em {
+        float: right;
+        font-size: 14px;
+        font-style: italic;
+    }
+    
+    #pop-careers #hiring h3 span {
+        float: left;
+        height: 25px;
+        margin-right: 0;
+        position: relative;
+        top: -28px;
+        width: 25px;
+    }
+    #pop-careers #hiring .details {
+        font-size: 16px !important;
+        padding-left: 0;
+        text-align: justify;
+        float: left;
+    }
+    
+    #pop-video {
+        height: auto;
+        padding: 20px 15px;
+        width: 90%;
+        text-align: center;
+        left: 0;
+        margin-left: auto;
+    }
+    #pop-video .pop-text {
+        float: left;
+        font-size: 20px;
+        width: 100%;
+    }
+    #pop-video .pop-text h2 {
+        font-size: 33px;
+        margin: 0 0 10px;
+    }
+    #pop-video .pop-form {
+        float: left;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #pop-video .form-btn {
+        float: left;
+        width: 100%;
+    }
+    #pop-video input[type="submit"] {
+      font-size: 18px;
+      height: 45px;
+      line-height: 45px;
+      margin-top: 10px;
+      width: 64%;
+    }
+    #pop-video #error_message {
+        float: left;
+        padding-top: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-video .error_message_text {
+        color: red;
+        text-align: center;
+        width: 100%;
+    }
+    #pop-view {
+        height: auto;
+        left: 0;
+        margin-left: auto;
+        padding: 34px 0;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+    #pop-view .pop-text {
+        color: #323232;
+        float: left;
+        font-size: 24px;
+        width: 100%;
+    }
+    .jp-video-360p {
+        width: 95% !important;
+        margin-left: 10px !important;
+    }
+    .jp-jplayer {
+        height: auto !important;
+        width: 100% !important;
+    }
+    #jp_video_0 {
+        height: 115px !important;
+        width: 100% !important;
+    }
+    .jp-interface {
+        width: 100% !important;
+    }
+    
+    /* 12-05-2015 */
+  /*      #main h1 {
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+}
+.home_form .wpcf7-form > p {
+  text-align: center;
+}
+.home-link
+{
+    text-align: center;
+    width: 97%;
+    padding-top: 15px;
+}
+input[type="text"], input[type="email"], textarea, select
+{
+    width: 100%;
+}  
+ 
+#main {
+  float: left;
+  margin: 30px auto 0;
+  padding: 7% 8px 10%;
+  position: relative;
+  width: 100%;
+}
+
+*/
+#wpcf7-f15-o2 textarea,.home_form .wpcf7-email
+{
+    width: 100%;
+}
+
+ #pop-contact {
+  bottom: 0;
+  height: 86%;
+  overflow: auto;
+  left: 0;
+  margin: 0 auto;
+  padding: 30px 12px;
+  right: 0;
+  top: 0;
+  width: 87%;
+}
+
+.pop-contact
+{
+    width: 44%;
+}
+
+.light {
+  font-size: 16px;
+}
+#pop-contact .pop-text h2 {
+        font-size: 22px;
+        margin: 0 0 10px;
+}
+    /* 12-05-2015 */
+    
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+input[type="button"], input[type="submit"], input[type="reset"] 
+{
+    -webkit-appearance: none;
+}
+  #pop-video
+  {
+      top: 20% !important ;
+  }
+  #pop-video input[type="submit"]
+  {
+    width: 120px;
+      }
+     #pop-careers {
+  width: 85%;
+  top: 3%;
+  overflow: auto;
+   height: 85%;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+}
+
+#pop-contact
+{
+    width: 85%;
+    top: 15%;
+}
+#pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select
+{
+    width: 95%;
+}
+.overlay {
+    width: 100%;
+}
+footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+#pop-video
+  {
+      top: 33% !important ;
+  }
+input[type="button"], input[type="submit"], input[type="reset"] 
+{
+    -webkit-appearance: none;
+}
+ #pop-careers {
+  width: 85%;
+  top: 3%;
+  overflow: auto;
+   height: 88%;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+}
+#pop-contact
+{
+    width: 85%;
+    top: 34%;
+}
+#pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"] {
+  font-size: 15px;
+  height: 32px;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-top: 5px;
+  padding: 6px 10px;
+  width: 95%;
+}
+ #pop-contact .contact_form_popup select
+ {
+    width: 100%;
+    margin-right: 0;
+ }
+ #pop-contact .contact_form_popup input[type="submit"]
+ {
+    font-size: 19px;
+    margin-right: 0;
+ }
+.overlay {
+    width: 100%;
+}
+footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+@media screen and (min-width:320px) and (max-width:568px) and  (orientation:portrait) and  (-webkit-device-pixel-ratio: 2)
+{
+    
+.contact_form_popup .wpcf7-form p {
+    text-align: right;
+}
+   .contact_form_popup .wpcf7-form p  .i-am-span
+    {
+        text-align: left;
+    }
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+    #pop-contact {
+  bottom: 0;
+  overflow: auto;
+    height: 80%;
+  left: 0;
+  margin: 0 auto;
+  padding: 15px 12px;
+  right: 0;
+   top:20px;
+    
+    margin-bottom: 20px;
+ 
+  width: 80%;
+}
+.overlay
+{
+    overflow-y: scroll;
+}
+#pop-contact .contact_form_popup textarea,#pop-contact .contact_form_popup input[type="email"],#pop-contact .contact_form_popup input[type="text"],#pop-contact .contact_form_popup select
+{
+    width:86%;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+
+
+@media screen and (min-width:320px) and (max-width:568px) and (orientation:landscape)  and  (-webkit-device-pixel-ratio: 2)
+{
+    .contact_form_popup .wpcf7-form p {
+    text-align: right;
+}
+   .contact_form_popup .wpcf7-form p  .i-am-span
+    {
+        text-align: left;
+    }
+    .contact_form_popup .wpcf7-form p {
+    text-align: right;
+}
+   .contact_form_popup .wpcf7-form p  .i-am-span
+    {
+        text-align: left;
+    }
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+    #pop-contact {
+  bottom: 0;
+ overflow: auto;
+    height: 80%;
+  left: 0;
+  margin: 0 auto;
+  padding: 15px 12px;
+  right: 0;
+   top:20px;
+ 
+    margin-bottom: 20px;
+ 
+  width: 80%;
+}
+
+#pop-contact .contact_form_popup textarea,#pop-contact .contact_form_popup input[type="email"],#pop-contact .contact_form_popup input[type="text"],#pop-contact .contact_form_popup select
+{
+    width:86%;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+
+  .home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+} 
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:portrait)  
+{
+ footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+ 
+ @media screen and (min-width:320px) and (max-width:767px) and (orientation:portrait)  
+{
+ footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+ @media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape)  
+{
+    .home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+}
+     /* End Popup Responsive */      
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+#pop-contact .contact_form_popup input[type="text"], #pop-contact .contact_form_popup input[type="email"], #pop-contact .contact_form_popup select,#wpcf7-f15-o2 textarea
+{
+    width:90%;  
+}
+ footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 3)  { 
+
+ footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+#pop-contact .contact_form_popup input[type="submit"] {
+
+  width: 97%;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+ footer .footer_menu a.btn-video,footer .footer_menu a.btn-careers
+{
+    display: none;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){ 
+    
+#pop-contact .contact_form_popup input[type="submit"] {
+
+  width: 97%;
+}
+.home_form .wpcf7-mail-sent-ok, #wpcf7-f15-o2 .wpcf7-mail-sent-ok {
+ 
+  width: 94%;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: 0;
+}
+}
+
+.i-am-span {
+    float: left;
+    width: 90%;
+}
+/* End Reponsive */
+
